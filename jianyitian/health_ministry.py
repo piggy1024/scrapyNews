@@ -105,7 +105,7 @@ a_contentWithLabel = []
 
 for url_of_content in real_content_url_list:
     browser.get(url_of_content)
-    is_visible("/html/body/div[@class='content']")
+    # is_visible("/html/body/div[@class='content']")
     html = browser.page_source
     content = BeautifulSoup(html, "lxml")
 
